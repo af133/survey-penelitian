@@ -1,0 +1,77 @@
+Markdown
+# Survey Penelitian App
+
+Aplikasi survei penelitian yang dibangun menggunakan Laravel dan React.
+
+## 🚀 Persiapan Awal (Setup)
+
+Pastikan Anda telah menginstal PHP, Composer, dan Node.js di sistem Anda.
+
+### 1. Clone Repository
+```bash
+git clone [https://github.com/af133/survey-penelitian.git](https://github.com/af133/survey-penelitian.git)
+cd survey-penelitian
+2. Install Dependency
+Instal library backend dan frontend:
+
+Bash
+# Install PHP dependencies
+composer install
+
+# Install JS dependencies
+npm install
+3. Konfigurasi Environment
+Salin file .env.example menjadi .env:
+
+Bash
+cp .env.example .env
+Buka file .env dan sesuaikan konfigurasi database Anda.
+
+4. Generate Key & Migrasi
+Bash
+php artisan key:generate
+php artisan migrate
+🛠 Menjalankan Aplikasi
+Jalankan dua perintah ini di terminal yang terpisah:
+
+Jalankan Server Laravel:
+
+Bash
+   php artisan serve
+Jalankan Vite:
+
+Bash
+   npm run dev
+Aplikasi dapat diakses di http://127.0.0.1:8000.
+
+📦 Update Proyek
+Jika ada pembaruan kode, gunakan perintah ini:
+
+Bash
+git pull origin main
+npm install
+php artisan migrate
+
+---
+
+### Cara memasukkannya ke file:
+
+1. **Jika di Linux/Terminal:**
+   * Ketik `nano README.md`
+   * **Paste** teks di atas (klik kanan > paste).
+   * Tekan `Ctrl + O` lalu `Enter` (untuk save).
+   * Tekan `Ctrl + X` (untuk keluar).
+
+2. **Jika di Windows (CMD/PowerShell):**
+   * Ketik `notepad README.md`
+   * **Paste** teks di atas.
+   * Klik **File > Save**.
+   * Tutup Notepad.
+
+Setelah itu, jangan lupa jalankan perintah ini agar file-nya masuk ke GitHub:
+
+```bash
+git add README.md
+git commit -m "Add README.md"
+git push -u origin main
+Apakah ada bagian lain yang ingin Anda ubah atau tambahkan?
